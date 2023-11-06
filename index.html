@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo.css">
+    <title>Formulario SAT</title>
+</head>
+<body>
+    <h1>Formulario SAT</h1>
+    <form class="declara" id="contact_form" action="#">
+        <ul>
+            <li>
+                <span class="required notification">*Agregue sus datos</span>
+            </li>
+            <li>
+                <label for="rfc">KFC</label>
+                <input type="text" for="rfc" name="rfc"  placeholder="10 A 13 CARACTERES" maxlength="13" required>
+            </li>
+            <li>
+                <label for="periodo">Mes</label>
+                <select name="periodo" id=""required>
+                    <option value=""opci&oactue;n></option>
+                    <option value="enero">Enero</option>
+                    <option value="febrero">febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">diciembre</option>
+                </select>
+            </li>
+            <li>
+                <label for="fecha">¿Que dia es hoy?</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </li>
+            <li>
+                <label for="phone">Ingresa tu telefono:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{0-9}{0-9}-[0-9]{0-9}{0-9}-[0-9]{0-9}[0-9]{0-9}" required />
+            </li>
+            <li>
+                <label for="color">¿color favorito?</label>
+                <select id="color" name="color" value="#81c6ff">
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#0000FF">Azul</option>
+                    <option value="	#008000">Verde</option>
+                    <option value="#800080">Morado</option>
+                </select>
+            </li>
+            <li>
+                <label for="pais">Seleccione su pais</label>
+                <select name="pais" id="pais">
+                    <option value="pais">Uzbekistán</option>
+                    <option value="pais">Burkina Faso</option>
+                    <option value="pais">Montenegro</option>
+                </select>
+            </li>
+
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
